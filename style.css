@@ -1,0 +1,59 @@
+html, body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 64px;
+    height: 100%;
+    background: #d8bfd9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block {
+    padding: 20px;
+}
+
+.field {
+    width: 242px;
+    margin: 24px;
+    border: 1px solid #8B008B;
+}
+
+.field::before, .field::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.field > div {
+    display: inline-block;
+    float: left;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #BA55D3;
+    background-color: azure;
+}
+
+#filed-comp .sheep {
+    background-color: #6a5acd;
+}
+
+.field .sheep {
+    background-color: #azure;
+}
+
+.field .broken,
+#field-comp .broken {
+    background-color: #dda0dd;
+}
+.field .missed {
+    background-color: #afeeee;
+}
